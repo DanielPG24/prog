@@ -1,0 +1,6 @@
+import Ejercicio15 Numeros
+import Ejercicio16
+lista = [3,2,7,4,1,5,6]
+
+
+
