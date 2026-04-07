@@ -1,0 +1,75 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package prog.ud6.ejer3;
+
+/**
+ *
+ * @author 12_1DAW_Alum
+ */
+public abstract class Vehicle implements Maintenance{
+    private String licensePlate;
+    private String brand;
+    private int year;
+    private FuelType fuelType;
+    private static int vehicleCount;
+    
+    
+    public Vehicle(String lilicensePlate, String brand, int year, FuelType fuelType){
+        this.licensePlate = licensePlate;
+	this.brand = brand;
+	this.year = year;
+	this.fuelType = fuelType;
+    }
+    
+    public Vehicle(){
+        
+    }
+    
+    public abstract double calculaSpeed();
+    
+    public String getVehicleInfo() {
+	return "Licencia: " + licensePlate + ", marca: " + brand;
+    }
+	
+    @Override
+    public String nextMaintanceDate() {
+	return String.valueOf(year); //Ejemplo
+    }
+	
+    public int getTotalVehicles() {
+	return vehicleCount;
+    }
+	
+    protected String getLicensePlate() {
+        return licensePlate;
+    }
+    protected void setLicensePlate(String licensePlate) {
+        this.licensePlate = licensePlate;
+    }
+    protected String getBrand() {
+	return brand;
+    }
+    protected void setBrand(String brand) {
+	this.brand = brand;
+    }
+    protected int getYear() {
+	return year;
+    }
+    protected void setYear(int year) {
+	this.year = year;
+    }
+    protected FuelType getFuelType() {
+	return fuelType;
+    }
+    protected void setFuelType(FuelType fuelType) {
+	this.fuelType = fuelType;
+    }
+    protected static int getVehicleCount() {
+	return vehicleCount;
+    }
+    protected static void setVehicleCount(int vehicleCount) {
+	Vehicle.vehicleCount = vehicleCount;
+    }
+}
