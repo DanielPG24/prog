@@ -2,7 +2,7 @@ import java.util.Comparator;
 
 public class ComparadoresPersona {
 
-    // 🔹 Comparador por edad
+    // Comparador por edad
     public static Comparator<Persona> porEdad = new Comparator<Persona>() {
         @Override
         public int compare(Persona p1, Persona p2) {
@@ -10,7 +10,7 @@ public class ComparadoresPersona {
         }
     };
 
-    // 🔹 Comparador por apellido
+    // Comparador por apellido
     public static Comparator<Persona> porApellido = new Comparator<Persona>() {
         @Override
         public int compare(Persona p1, Persona p2) {
@@ -18,7 +18,7 @@ public class ComparadoresPersona {
         }
     };
 
-    // 🔹 Comparador por apellido, nombre y edad
+    // Comparador por apellido, nombre y edad
     public static Comparator<Persona> completo = new Comparator<Persona>() {
         @Override
         public int compare(Persona p1, Persona p2) {
@@ -37,7 +37,7 @@ public class ComparadoresPersona {
         }
     };
 
-    // 🔹 Ampliación: los que no tienen apellido primero
+    // Ampliación: los que no tienen apellido primero
     public static Comparator<Persona> completoConNulos = new Comparator<Persona>() {
         @Override
         public int compare(Persona p1, Persona p2) {
