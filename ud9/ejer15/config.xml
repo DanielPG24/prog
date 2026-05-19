@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<configuracion>
+    <base-datos motor="PostgreSQL">
+        <host>localhost</host>
+        <puerto>5432</puerto>
+        <usuario>admin</usuario>
+    </base-datos>
+</configuracion>
+
