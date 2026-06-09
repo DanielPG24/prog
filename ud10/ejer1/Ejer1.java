@@ -15,7 +15,7 @@ public class Ejer1 {
 
         EventoMusical evento = new EventoMusical(
                 "Festival Primavera",
-                LocalDate.of(2026, 5, 20),
+                new Date(2026, 5, 20),
                 new BigDecimal("125000.50")
         );
 
