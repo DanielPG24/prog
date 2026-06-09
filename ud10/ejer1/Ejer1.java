@@ -4,7 +4,7 @@
  */
 package prog.ud10.ejer1;
 
-import java.time.LocalDate;
+import java.util.Date;
 import java.math.BigDecimal;
 /**
  *
