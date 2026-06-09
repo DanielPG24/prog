@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 public class EventoMusical {
 
     private String nombreEvento;
-    private LocalDate fecha;
+    private Date fecha;
     private BigDecimal recaudacion;
 
     // Constructor vacío
@@ -18,7 +18,7 @@ public class EventoMusical {
     }
 
     // Constructor con parámetros
-    public EventoMusical(String nombreEvento, LocalDate fecha, BigDecimal recaudacion) {
+    public EventoMusical(String nombreEvento, Date fecha, BigDecimal recaudacion) {
         this.nombreEvento = nombreEvento;
         this.fecha = fecha;
         this.recaudacion = recaudacion;
@@ -49,15 +49,6 @@ public class EventoMusical {
         this.recaudacion = recaudacion;
     }
 
-    // Método toString
-    @Override
-    public String toString() {
-        return "EventoMusical{" +
-                "nombreEvento='" + nombreEvento + '\'' +
-                ", fecha=" + fecha +
-                ", recaudacion=" + recaudacion +
-                '}';
-    }
 }
     
     
